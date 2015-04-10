@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Alex_DeliveryA>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Alex_DeliveryA>
+    </modules>
+</config>
