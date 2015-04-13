@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <global>
+        <models>
+            <demo>
+                <class>TutsPlus_Demo_Model</class>
+            </demo>
+        </models>
+    </global>
+
+    <blocks>
+
+    </blocks>
+
+    <helpers>
+
+
+    </helpers>
+    <!-- Default configuration -->
+
+</config>
