@@ -112,7 +112,7 @@
                         </fields>
                        <fields>
                           <calendarlabel translate="label">
-                            <label>Calendar</label>
+                            <label>Calendar of Delivery</label>
                             <frontend_type>label</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
@@ -122,41 +122,120 @@
                         
                            <monday translate="label">
                             <label>Monday</label>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>11</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                          
-                        </monday>
-                                           <monday_01 translate="label">
+                            <show_in_store>1</show_in_store>    
+                           </monday>
+                                          <monday_t_01 translate="label">
                                             <label>01:00</label>
-                                            <frontend_type>checkbox</frontend_type>
+                                            <frontend_type>select</frontend_type>
+                                            <source_model>adminhtml/system_config_source_yesno</source_model>
                                             <sort_order>21</sort_order>
                                             <show_in_default>1</show_in_default>
                                             <show_in_website>1</show_in_website>
                                             <show_in_store>1</show_in_store>
-                                         <!--   <depends><monday>no</monday></depends>-->   
-                                        </monday_01>
-                                    
-
-                             <tuesday translate="label">
+                                         <depends><monday>1</monday></depends>  
+                                        </monday_t_01>
+                                        <monday_p_01 translate="label">
+                                            <comment>Price of delivery, $</comment>
+                                            <frontend_type>text</frontend_type>
+                                            <sort_order>22</sort_order>
+                                            <show_in_default>1</show_in_default>
+                                            <show_in_website>1</show_in_website>
+                                            <show_in_store>1</show_in_store>
+                                         <depends><monday_t_01>1</monday_t_01></depends>  
+                                        </monday_p_01>
+                                         <monday_t_02 translate="label">
+                                            <label>02:00</label>
+                                            <frontend_type>select</frontend_type>
+                                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                                            <sort_order>23</sort_order>
+                                            <show_in_default>1</show_in_default>
+                                            <show_in_website>1</show_in_website>
+                                            <show_in_store>1</show_in_store>
+                                         <depends><monday>1</monday></depends>  
+                                        </monday_t_02>
+                                        <monday_p_02 translate="label">
+                                            <comment>Price of delivery, $</comment>
+                                            <frontend_type>text</frontend_type>
+                                            <sort_order>24</sort_order>
+                                            <show_in_default>1</show_in_default>
+                                            <show_in_website>1</show_in_website>
+                                            <show_in_store>1</show_in_store>
+                                         <depends><monday_t_02>1</monday_t_02></depends>  
+                                        </monday_p_02>
+                                         <monday_t_03 translate="label">
+                                            <label>03:00</label>
+                                            <frontend_type>select</frontend_type>
+                                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                                            <sort_order>25</sort_order>
+                                            <show_in_default>1</show_in_default>
+                                            <show_in_website>1</show_in_website>
+                                            <show_in_store>1</show_in_store>
+                                         <depends><monday>1</monday></depends>  
+                                        </monday_t_03>
+                                        <monday_p_03 translate="label">
+                                            <comment>Price of delivery, $</comment>
+                                            <frontend_type>text</frontend_type>
+                                            <sort_order>24</sort_order>
+                                            <show_in_default>1</show_in_default>
+                                            <show_in_website>1</show_in_website>
+                                            <show_in_store>1</show_in_store>
+                                         <depends><monday_t_03>1</monday_t_03></depends>  
+                                        </monday_p_03>
+                        <tuesday translate="label">
                              <label>Tuesday</label>
-                            <frontend_type>checkbox</frontend_type>
-                            <sort_order>12</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </tuesday>
-                           <allowspecific translate="label">
-   <label>Payment Applicable From</label>
-   <frontend_type>select</frontend_type>
-   <sort_order>100</sort_order>    <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
-   <show_in_default>1</show_in_default>
-   <show_in_website>1</show_in_website>
-   <show_in_store>0</show_in_store>
-</allowspecific>
+                        </tuesday>   
+                                         <tuesday_t_01 translate="label">
+                                             <label>01:00</label>
+                                             <frontend_type>select</frontend_type>
+                                             <source_model>adminhtml/system_config_source_yesno</source_model>
+                                             <sort_order>61</sort_order>
+                                             <show_in_default>1</show_in_default>
+                                             <show_in_website>1</show_in_website>
+                                             <show_in_store>1</show_in_store>
+                                             <depends><tuesday>1</tuesday></depends>  
+                                         </tuesday_t_01>
+                                         <tuesday_p_01 translate="label">
+                                              <comment>Price of delivery, $</comment>
+                                              <frontend_type>text</frontend_type>
+                                              <sort_order>62</sort_order>
+                                              <show_in_default>1</show_in_default>
+                                              <show_in_website>1</show_in_website>
+                                              <show_in_store>1</show_in_store>
+                                              <depends><tuesday_t_01>1</tuesday_t_01></depends>  
+                                          </tuesday_p_01>
+                                          <tuesday_t_02 translate="label">
+                                             <label>02:00</label>
+                                             <frontend_type>select</frontend_type>
+                                             <source_model>adminhtml/system_config_source_yesno</source_model>
+                                             <sort_order>63</sort_order>
+                                             <show_in_default>1</show_in_default>
+                                             <show_in_website>1</show_in_website>
+                                             <show_in_store>1</show_in_store>
+                                             <depends><tuesday>1</tuesday></depends>  
+                                         </tuesday_t_01>
+                                         <tuesday_p_01 translate="label">
+                                              <comment>Price of delivery, $</comment>
+                                              <frontend_type>text</frontend_type>
+                                              <sort_order>64</sort_order>
+                                              <show_in_default>1</show_in_default>
+                                              <show_in_website>1</show_in_website>
+                                              <show_in_store>1</show_in_store>
+                                              <depends><tuesday_t_01>1</tuesday_t_01></depends>  
+                                          </tuesday_p_01>
+                            
+                                 
+                          
                     </fields>
                 </smashingmagazine_mycarrier>
             </groups>

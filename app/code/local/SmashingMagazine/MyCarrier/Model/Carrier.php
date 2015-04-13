@@ -32,8 +32,8 @@ class SmashingMagazine_MyCarrier_Model_Carrier extends Mage_Shipping_Model_Carri
             $error->setErrorMessage($this->getConfigData('specificerrmsg'));
             $result->append($error);
         }
-         $head = $this->getLayout()->getBlock('head');
-         $head->addJs('my/script.js');
+        // $head = $this->getLayout()->getBlock('head');
+        /// $head->addJs('my/script.js');
         return $result;
     }
     public function getAllowedMethods()
