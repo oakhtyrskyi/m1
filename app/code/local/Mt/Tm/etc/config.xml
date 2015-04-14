@@ -1,0 +1,19 @@
+﻿<config>
+    <modules>
+        <Mt_Tm>
+            <version>0.1.0</version>
+        </Mt_Tm>
+    </modules>
+    <global>
+        <models>
+            <tm>
+                <class>Mt_Tm_Model</class>
+            </tm>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            
+        </routers>
+    </frontend>
+</config>

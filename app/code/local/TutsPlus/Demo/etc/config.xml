@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <config>
+    <modules>
+        <TutsPlus_Demo>
+             <version>0.1.0</version>
+        </TutsPlus_Demo>
+    </modules>
     <global>
         <models>
             <demo>
                 <class>TutsPlus_Demo_Model</class>
             </demo>
         </models>
-   
-
-    <blocks>
+   <!-- <blocks>
         <demo>
             <class>TutsPlus_Demo_Block</class>
         </demo>
     </blocks>
-
     <helpers>
          <demo>
             <class>TutsPlus_Demo_Helper</class>
@@ -29,18 +30,18 @@
                 </demo>
             </observers>
         </customer_login>
-    </events>
+    </events>-->
     <!-- Default configuration -->
    </global>
     <frontend>
         <routers>
-            <tutsplus_demo>
+            <demo>
                 <use>standart</use>
                 <args>
                     <module>TutsPlus_Demo</module>
                     <frontName>demo</frontName>
                 </args>
-            </tutsplus_demo>
+            </demo>
         </routers>
     </frontend>
 </config>

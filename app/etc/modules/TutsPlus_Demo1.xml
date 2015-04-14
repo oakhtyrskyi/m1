@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <TutsPlus_Demo1>
+            <active>true</active>
+            <codePool>local</codePool>
+        </TutsPlus_Demo1>
+    </modules>
+</config>

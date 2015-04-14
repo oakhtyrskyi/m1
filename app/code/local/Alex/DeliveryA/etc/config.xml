@@ -1,1 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<config>
+    <global>
+        <models>
+            <deliverya>
+                <class>Alex_DeliveryA_Model</class>
+            </deliverya>
+        </models>
+         <blocks>
+             <alex>
+                <class>Alex_DeliveryA_Block</class>
+             </alex>
+        </blocks>
+    <!-- Default configuration -->
+   </global>
+    <frontend>
+        <routers>
+            <alex_deliverya>
+                <use>admin</use>
+                <args>
+                    <module>Alex_DeliveryA</module>
+                    <frontName>deliverya</frontName>
+                </args>
+            </alex_deliverya>
+        </routers>  
+        <!--  <layout>
+            <updates>
+                <deliverya>
+                    <file>deliverya.xml</file>
+                </deliverya>
+            </updates>
+        </layout>-->
+    </frontend>
+  
+</config>
