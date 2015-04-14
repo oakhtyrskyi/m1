@@ -31,5 +31,16 @@
         </customer_login>
     </events>
     <!-- Default configuration -->
- </global>
+   </global>
+    <frontend>
+        <routers>
+            <tutsplus_demo>
+                <use>standart</use>
+                <args>
+                    <module>TutsPlus_Demo</module>
+                    <frontName>demo</frontName>
+                </args>
+            </tutsplus_demo>
+        </routers>
+    </frontend>
 </config>
